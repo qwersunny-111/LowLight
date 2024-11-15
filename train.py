@@ -7,7 +7,10 @@ from modeling.fpn import *
 from option import *
 from utils import *
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0' # GPU only
+import setproctitle
+setproctitle.setproctitle("sunleyao")
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '7' # GPU only
 device = get_device()
 
 class Trainer():

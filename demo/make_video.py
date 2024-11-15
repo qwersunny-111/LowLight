@@ -11,10 +11,10 @@ import argparse
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Video_Demo")
-    parser.add_argument('--video_path', type=str, default='demo/Movie/Ari.mp4')
-    parser.add_argument("--image_lowlight_folder", type=str, default='data/test_data/Frames/%d.jpg')
-    parser.add_argument('--image_folder', type=str, default='data/test_output/Frames/')
-    parser.add_argument('--save_path', type=str, default='demo/Movie/Res.mp4')
+    parser.add_argument('--video_path', type=str, default='/home/B_UserData/sunleyao/LowLight/test_data/video20241029/6.mp4')
+    parser.add_argument("--image_lowlight_folder", type=str, default='/home/B_UserData/sunleyao/LowLight/test_data/video20241029/6/%d.jpg')
+    parser.add_argument('--image_folder', type=str, default='/home/B_UserData/sunleyao/LowLight/test_data/video20241029/6/')
+    parser.add_argument('--save_path', type=str, default='/home/sunleyao/sly/Semantic-Guided-Low-Light-Image-Enhancement/demo/6_enlight.mp4')
     parser.add_argument('--choice', type=str, required=True, choices = ['V2I', 'I2V'], default='V2I')
 
     args = parser.parse_args()
